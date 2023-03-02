@@ -8,4 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="botones">#0584DA</color>
+    <color name="red">#EC1B24</color>
+    <color name="rosa">#F62459</color>
+    <color name="verde">#315B09</color>
+    <color name="azul">#FF387BFD</color>
 </resources>

@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:backgroundTint="@color/botones"
+        android:backgroundTint="#EC1B24"
         android:onClick="openLongitudesFragment"
         android:text="Longitud"
         android:textSize="20sp"
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:backgroundTint="@color/botones"
+        android:backgroundTint="#E91E63"
         android:text="Peso"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:backgroundTint="@color/botones"
+        android:backgroundTint="#4CAF50"
         android:text="Volumen"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:backgroundTint="@color/botones"
+        android:backgroundTint="@color/azul"
         android:text="Temperatura"
         android:textSize="20sp"
         android:textStyle="bold" />

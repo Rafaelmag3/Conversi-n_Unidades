@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">unidades</string>
+    <string name="app_name">Convertidor de Unidades</string>
 
     <string-array name="unidades_longitud">
         <item>Centímetros</item>
