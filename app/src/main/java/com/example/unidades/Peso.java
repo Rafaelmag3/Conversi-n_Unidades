@@ -1,13 +1,11 @@
 package com.example.unidades;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,6 +25,7 @@ public class Peso extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.peso);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         // Obtener referencias a los views
         editText = findViewById(R.id.edit_text);
         resultado = findViewById(R.id.text_view_resultado);
@@ -74,6 +73,20 @@ public class Peso extends AppCompatActivity {
             }
         });
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == android.R.id.home) {
+            // Navegar a la actividad lista_videos al presionar el botón de regreso en la ActionBar
+            Intent intent = new Intent(this, MainActivity.class);
+            // Agregar la bandera FLAG_ACTIVITY_CLEAR_TOP al intent para reiniciar la actividad anterior
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
     private double convertir(double valor, String medida1, String medida2) {
         double resultado = 0;
